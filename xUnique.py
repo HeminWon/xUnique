@@ -219,8 +219,8 @@ Please check:
                     continue
                 else:
                     for key in key_list:
-                        new_key = self.__result[key]['new_key']
-                        new_line = new_line.replace(key, new_key)
+                        new_key = key
+                        new_line = line
                     output_u8line(new_line)
         fi_close()
         tmp_path = self.xcode_pbxproj_path + '.ubak'
